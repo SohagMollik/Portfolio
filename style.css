@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif, 'Montserrat', sans-serif;
+    background-color: black;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding: 20px;
+}
+
+/* .logo {
+    width: 100px;
+}
+
+#logo-details {
+    width: 100%;
+    border-radius: 20%;
+} */
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a, .dropbtn {
+    color: silver;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px; /* Set a consistent font size */
+}
+
+.menu a:hover, .dropbtn:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgrey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#bio-details {
+    flex: 1;
+    padding: 20px;
+}
+
+#bio-details p {
+    margin: 0;
+}
+
+#bio-details {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#mypic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+/* Style the links within the achievements section */
+#achieve-details a {
+    text-decoration: none;
+    color: rgb(207, 212, 130);
+    transition: color 0.3s;
+}
+
+#achieve-details a:hover {
+    color: #FFA07A;
+}
+
+#project-details a {
+    text-decoration: none;
+    color: rgb(207, 212, 130);
+    transition: color 0.3s;
+}
+
+#project-details a:hover {
+    color: #FFA07A;
+}
+
+#details-education h2 {
+    margin-bottom: 0;
+}
+#details-education hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px;
+}
+
+#skill-details h2 {
+    margin-bottom: 0;
+}
+#skill-details hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px;
+}
+
+#achieve-details h2 {
+    margin-bottom: 0;
+}
+#achieve-details hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px;
+}
+
+#research-details h2 {
+    margin-bottom: 0;
+}
+#research-details hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px;
+}
+
+
+#project-details h2 {
+    margin-bottom: 0; /* Reduce the space below the h2 tag */
+}
+#project-details hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px; /* Optional: adjust the space below the hr tag */
+}
+
+#activities-details h2 {
+    margin-bottom: 0; /* Reduce the space below the h2 tag */
+}
+#activities-details hr {
+    margin-top: 5px; /* Reduce the space above the hr tag */
+    margin-bottom: 10px; /* Optional: adjust the space below the hr tag */
+}
+
+
+.hire-link, .cv {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid silver;
+    color: silver;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hire-link:hover, .cv:hover {
+    background-color: silver;
+    color: black;
+}
+
+section {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 0.8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+hr {
+    border: 1px solid rgb(170, 162, 43);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.social-links a {
+    color: rgb(119, 201, 153);
+    font-size: 30px;
+    margin: 0 10px;
+}
+.social-links a:hover {
+    color: #FFA07A;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.container input, .container textarea, .container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+#submit {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container button {
+    background-color: silver;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container button:hover {
+    background-color: black;
+    color: silver;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mypic {
+        margin: 0 0 20px 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
